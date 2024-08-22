@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/73dc349aa9.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- header section -->
     <header>
+        <nav class="container mx-auto bg-white py-4 px-6 shadow-sm flex items-center justify-between">
 
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i>
+                    <span class="text-xl font-bold text-[#212121]">Rinterio</span>
+                </div>
+                <div class="hidden md:flex space-x-6 ">
+                    <a href="#" class="text-gray-500 hover:text-gray-800 hover:font-bold">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 hover:font-bold">Services</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 hover:font-bold">Portfolio</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 hover:font-bold">Blogs</a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 hover:font-bold">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="text-gray-800 focus:outline-none">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <a href="#"
+                    class="bg-[#ABEF5F] text-[#1C1C1C] font-bold px-4 py-2 rounded-full hover:bg-[#acef5f88] flex items-center">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] rounded-full mx-1 p-1"></i>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="bg-gray-50 py-12 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+
+                <img src="./assets/banner.png" alt="banner-image" class="mx-auto w-full max-w-xl">
+                <br>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-[#212121]">
+                    A barn house of this design has a striking appearance
+                </h1>
+                <br>
+                <p class="text-gray-600 text-lg">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that enlightened the space with natural
+                    light.
+                </p>
+                <br>
+                <a href="#"
+                    class="bg-[#acef5f6e] text-[#1C1C1C] font-bold md:mb-20 py-3 px-32 lg:px-6 rounded-full inline-flex items-center hover:bg-[#acef5fcd]">
+                    View Details
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full mx-2 p-1"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <!-- main section -->
     <main>

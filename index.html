@@ -38,7 +38,7 @@
 <body class="font-manrope">
     <!-- header section -->
     <header>
-        <nav class="container mx-auto bg-white py-4 px-6 shadow-sm flex items-center justify-between">
+        <nav class="w-11/12 mx-auto bg-white py-4 px-6 shadow-sm flex ">
 
             <div class="flex items-center space-x-8 justify-between">
                 <div class="flex items-center space-x-2 mr-28 lg:mr-52">
@@ -309,78 +309,73 @@
         </section>
 
         <!-- Next Project section -->
-        <section class="mb-4 mt-5 max-w-full" style="background-image: url(./assets/bg.jpg);">
-            <div class="text-center pt-11 ">
+        <div class="bg-cover bg-center bg-no-repeat mb-3" style="background-image: url('./assets/bg.jpg');">
+            <!-- Your form content here -->
+            <div class="p-8">
                 <div class="text-sm text-center mb-2">
-                    <a class=" text-[#494949] bg-[#ABEF5F33] p-2 rounded-2xl" href="#"><i
-                            class="fa-solid fa-arrow-right mx-auto mr-1"></i>
-                        <span>Let’s Connect</span></a>
+                    <a class="bg-[#ABEF5F33] p-2 rounded-2xl" href="#"><i
+                            class="fa-solid fa-arrow-right text-gray-500 mx-auto mb-5 mr-1"></i>
+                        <span class="text-gray-500">Let’s Connect</span></a>
                 </div>
-                <h1 class="text-2xl md:text-4xl font-bold text-center text-[#212121]">Let’s Discuss Next Project
-                </h1>
-                <br>
-                <p class="text-lg text-gray-500 text-center lg:w-2/4 mx-auto mb-7">The barn house captivates
-                    with its
-                    blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                <h2 class="text-3xl lg:text-4xl font-bold text-center">Let's Discuss Next Project</h2>
+                <p class="text-center text-lg ml-14 lg:ml-60 w-4/6 mt-2">
+                    Dive deeper into JavaScript, focusing on dynamic functionalities and interactivity for web applications. Once you’re comfortable with JavaScript, explore a frontend framework like React, Vue, or Svelte. These frameworks work well with Tailwind CSS and allow you to build scalable, component-based applications.
                 </p>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:max-w-4xl lg:ml-80 mx-5 lg:mx-0">
-                    <input class="py-4 px-7 rounded-3xl" type="text" name="" id="" placeholder="First Name*">
-                    <input class="py-4 px-7 rounded-3xl" type="text" name="" id="" placeholder="Last Name*">
-                    <input class="py-4 px-7 rounded-3xl " type="number" name="" id="" placeholder="Phone Number*">
-                    <input class="py-4 px-7 rounded-3xl" type="email" name="" id="" placeholder="Email Number*">
-                </div>
-                <div class="">
-                    <textarea class="textarea w-[380px] mx-5 lg:w-[900px] h-[300px] mt-5 lg:ml-12 rounded-2xl"
-                        placeholder="Write your message here"></textarea>
-                </div>
-                <button
-                    class="bg-[#ABEF5F] text-lg lg:text-xl font-bold w-[380px] lg:w-[900px] lg:ml-6 rounded-2xl py-2 mt-5  mb-5 lg:mb-24">
-                    Send Mail
-                    <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#212121] rounded-full mx-1 p-1"></i>
-                </button>
+                <form class="mt-8 max-w-xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-3xl" />
+                        <input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-3xl" />
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+                        <input type="text" placeholder="Phone Number*" class="input input-bordered w-full rounded-3xl" />
+                        <input type="email" placeholder="Email Number*" class="input input-bordered w-full rounded-3xl" />
+                    </div>
+                    <textarea placeholder="Write your message here"
+                        class="textarea textarea-bordered w-full mt-4 h-52"></textarea>
+                    <button type="submit" class="btn bg-[#ABEF5F] w-full mt-4 rounded-3xl">Send Mail</button>
+                </form>
             </div>
-        </section>
+        </div>
     </main>
-   <!-- footer section -->
-   <footer>
-    <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
-        <div>
-            <div class="flex items-center space-x-2 mb-2">
-                <i class="fa-solid fa-arrow-right -rotate-45 text-[#1C1C1C] bg-[#ABEF5F] rounded-full p-1"></i>
-                <span class="text-xl font-bold text-white">Rinterio</span>
+    <!-- footer section -->
+    <footer>
+        <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
+            <div>
+                <div class="flex items-center space-x-2 mb-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-[#1C1C1C] bg-[#ABEF5F] rounded-full p-1"></i>
+                    <span class="text-xl font-bold text-white">Rinterio</span>
+                </div>
+
+                <p class="lg:max-w-xl font-bold text-[#737373]">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
             </div>
 
-            <p class="lg:max-w-xl font-bold text-[#737373]">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                weathered wood, sleek metal accents.
-            </p>
-        </div>
-
-        <div class="grid grid-col-1 lg:grid-cols-5 gap-4 text-[#737373] lg:space-x-20">
-            <a>
-                <p>Home</p>
+            <div class="grid grid-col-1 lg:grid-cols-5 gap-4 text-[#737373] lg:space-x-20">
+                <a>
+                    <p>Home</p>
+                </a>
+                <a>
+                    <p>Services</p>
+                </a>
+                <a>
+                    <p>Portfolio</p>
+                </a>
+                <a>
+                    <p>Blogs</p>
+                </a>
+                <a>
+                    <p>Contact Us</p>
+                </a>
+            </div>
+            <a href="#"
+                class="bg-[#ABEF5F] text-[#1C1C1C] font-bold py-2 lg:py-3 px-28 lg:px-8 rounded-full hover:bg-[#acef5f88] flex">
+                Book Consult
+                <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] rounded-full mx-auto p-1"></i>
             </a>
-            <a>
-                <p>Services</p>
-            </a>
-            <a>
-                <p>Portfolio</p>
-            </a>
-            <a>
-                <p>Blogs</p>
-            </a>
-            <a>
-                <p>Contact Us</p>
-            </a>
-        </div>
-        <a href="#"
-            class="bg-[#ABEF5F] text-[#1C1C1C] font-bold py-2 lg:py-3 px-28 lg:px-8 rounded-full hover:bg-[#acef5f88] flex">
-            Book Consult
-            <i class="fa-solid fa-arrow-right text-white -rotate-45 bg-[#1C1C1C] rounded-full mx-auto p-1"></i>
-        </a>
+        </footer>
     </footer>
-</footer>
 </body>
 
 </html>
